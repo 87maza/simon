@@ -1,0 +1,54 @@
+/*===========================================
+General Styles
+=============================================*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	height: 100vh;
+	margin: 0 auto; /*all our rows will be centered*/
+}
+body{
+	position: relative;
+}
+.container{
+   	position: absolute;
+   	top: 50%;
+   	left: 50%;
+   	transform: translate(-50%, 6%);
+	height: 520px;
+	width: 520px;
+	border: 1px solid black;
+
+}
+.squares{
+    height: 260px;
+    width: 257px;
+    border: 1px dotted gray;
+    display: inline-block;
+    border-radius: 40px;
+
+}
+#red{
+	background-color: red;
+}
+#blue{
+	background-color: blue;
+}
+#green{
+	background-color: green;
+}
+#yellow{
+	background-color: yellow;
+}
+
+#center{
+	position:absolute;
+}
