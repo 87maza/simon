@@ -25,16 +25,32 @@ body{
    	transform: translate(-50%, 6%);
 	height: 520px;
 	width: 520px;
-	border: 1px solid black;
 
 }
 .squares{
-    height: 260px;
-    width: 257px;
+    height: 50%;
+    width: 49%;
     border: 1px dotted gray;
     display: inline-block;
     border-radius: 40px;
+	position: relative;
+}
 
+.squares h3{
+	color: #F8F8F8;
+	position: absolute;
+ 	transform: translate(-50%, -50%);
+  	top: 50%;
+  	left: 50%;
+	display: none;
+}
+.squares:hover h3{
+	color: #000;
+	position: absolute;
+ 	transform: translate(-50%, -50%);
+  	top: 50%;
+  	left: 50%;
+  	display: block;
 }
 #red{
 	background-color: red;
@@ -47,6 +63,55 @@ body{
 }
 #yellow{
 	background-color: yellow;
+}
+
+
+
+.light {
+	height: 50%;
+    width: 49%;
+    border: 1px dotted gray;
+    display: inline-block;
+    border-radius: 40px;
+	position: relative;
+	animation-name: highlight;
+	animation-duration: 1s;
+}
+
+@keyframes highlight {
+    from {border: 1px dotted gray;}
+    to {border: 10px solid black;}
+}
+
+.light h3{
+	color: #000;
+	position: absolute;
+ 	transform: translate(-50%, -50%);
+  	top: 50%;
+  	left: 50%;
+  	display: block;
+}
+
+#red:hover{
+	background: radial-gradient(circle, red, grey);
+    opacity: 0.9;
+    border-radius: 40px;
+
+}
+#blue:hover{
+	background: radial-gradient(circle, blue, grey);
+    opacity: 0.9;
+    border-radius: 40px;
+}
+#green:hover{
+	background: radial-gradient(circle, green, grey);
+    opacity: 0.9;
+    border-radius: 40px;
+}
+#yellow:hover{
+    background: radial-gradient(circle, yellow, grey);
+    opacity: 0.9;
+    border-radius: 40px;
 }
 
 #center{
