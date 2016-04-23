@@ -36,6 +36,7 @@ yellow.addEventListener('click', function(){
 });
 
 function random() {
+	(setTimeout(function(){
 	var colors = [red, blue, green, yellow];
 	var sounds = [redSound, blueSound, greenSound, yellowSound];
 	var num = Math.floor(Math.random() * 3) + 1;
@@ -50,14 +51,37 @@ function random() {
 	}, 1000);
 	randomCalls++
 	humanCombos.pop();  //doubles down on the humanCombos, need to pop it
+	
+	}, 1500));
+
 }
 
 function checkWinner() {
+	if(humanCombos.length >= winningCombos.length && humanCombos.join('') !== winningCombos.join('')){
+		alert('try again');
+		humanCombos = [];
+		return;
+	}
+	if(humanCombos.length>winningCombos.length) {
+		humanCombos = [];
+		checkWinner();
+	}
 	if(humanCombos.length > 0) {
 		if(humanCombos.join('')===winningCombos.join('')){
 			alert('hell yeah');
+			winningCombos = [];
+			humanCombos = [];
 		}
-		return;
 	}
+
 	return;
 }
+
+
+
+// random(); 	(setTimeout(function(){
+// 		random();
+// 	}, 1500));
+// (setTimeout(function(){
+// 		random();
+// 	}, 3000));
