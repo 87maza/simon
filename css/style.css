@@ -6,6 +6,7 @@ General Styles
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Gloria Hallelujah', cursive;
 }
 
 html{
@@ -14,6 +15,26 @@ html{
 	text-rendering: optimizeLegibility;
 	height: 100vh;
 	margin: 0 auto; /*all our rows will be centered*/
+  	-webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 320px;
+  height: 320px;
+  border: none;
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: -webkit-linear-gradient(117deg, rgb(21,21,21) 5px, rgba(0,0,0,0) 5px), -webkit-linear-gradient(297deg, rgb(21,21,21) 5px, rgba(0,0,0,0) 5px), -webkit-linear-gradient(117deg, rgb(34,34,34) 5px, rgba(0,0,0,0) 5px), -webkit-linear-gradient(297deg, rgb(34,34,34) 5px, rgba(0,0,0,0) 5px), -webkit-linear-gradient(left, rgb(27,27,27) 10px, rgba(0,0,0,0) 10px), -webkit-linear-gradient(rgb(29,29,29) 25%, rgb(26,26,26) 25%, rgb(26,26,26) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%, rgb(36,36,36) 75%, rgb(36,36,36) 100%), rgb(19, 19, 19);
+  background: -o-linear-gradient(117deg, rgb(21,21,21) 5px, rgba(0,0,0,0) 5px), -o-linear-gradient(297deg, rgb(21,21,21) 5px, rgba(0,0,0,0) 5px), -o-linear-gradient(117deg, rgb(34,34,34) 5px, rgba(0,0,0,0) 5px), -o-linear-gradient(297deg, rgb(34,34,34) 5px, rgba(0,0,0,0) 5px), -o-linear-gradient(left, rgb(27,27,27) 10px, rgba(0,0,0,0) 10px), -o-linear-gradient(rgb(29,29,29) 25%, rgb(26,26,26) 25%, rgb(26,26,26) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%, rgb(36,36,36) 75%, rgb(36,36,36) 100%), rgb(19, 19, 19);
+  background: linear-gradient(207deg, rgb(21,21,21) 5px, rgba(0,0,0,0) 5px), linear-gradient(27deg, rgb(21,21,21) 5px, rgba(0,0,0,0) 5px), linear-gradient(207deg, rgb(34,34,34) 5px, rgba(0,0,0,0) 5px), linear-gradient(27deg, rgb(34,34,34) 5px, rgba(0,0,0,0) 5px), linear-gradient(to right, rgb(27,27,27) 10px, rgba(0,0,0,0) 10px), linear-gradient(rgb(29,29,29) 25%, rgb(26,26,26) 25%, rgb(26,26,26) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%, rgb(36,36,36) 75%, rgb(36,36,36) 100%), rgb(19, 19, 19);
+  background-position: 0 5px, 10px 0, 0 10px, 10px 5px, 0 0, 0 0;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: 20px 20px;
+  background-size: 20px 20px;
 }
 body{
 	position: relative;
@@ -22,11 +43,38 @@ body{
    	position: absolute;
    	top: 50%;
    	left: 50%;
-   	transform: translate(-50%, 6%);
-	height: 520px;
-	width: 520px;
-
+   	transform: translate(-50%, 2%);
+	height: 480px;
+	width: 480px;
 }
+#center{
+	position: relative;
+}
+h1,h2{
+	display: inline-block;
+	font-size: 3em;
+	font-style: italic;
+	margin: 0 auto;
+	-webkit-margin-after: 0;
+	-webkit-margin-before: 0;
+
+}	
+button{
+background: #a048b9 -webkit-linear-gradient(50deg, #a048b9 0%, #a048b9 10%, #9845b0 10%, #9845b0 20%, #8c40a3 19%, #9041a6 21%, #9041a6 20%, #9041a6 30%, #853c99 29%, #883e9d 31%, #883e9d 30%, #883e9d 40%, #7d3990 39%, #803a94 41%, #803a94 40%, #803a94 50%, #753587 49%, #78368b 51%, #78368b 50%, #78368b 60%, #6d317e 59%, #703381 61%, #703381 60%, #703381 70%, #652e74 69%, #682f78 71%, #682f78 70%, #682f78 80%, #5d2a6b 79%, #602b6f 81%, #602b6f 80%, #602b6f 90%, #552662 89%, #582866 91%, #582866 90%, #582866 100%);
+background: #a048b9 -o-linear-gradient(50deg, #a048b9 0%, #a048b9 10%, #9845b0 10%, #9845b0 20%, #8c40a3 19%, #9041a6 21%, #9041a6 20%, #9041a6 30%, #853c99 29%, #883e9d 31%, #883e9d 30%, #883e9d 40%, #7d3990 39%, #803a94 41%, #803a94 40%, #803a94 50%, #753587 49%, #78368b 51%, #78368b 50%, #78368b 60%, #6d317e 59%, #703381 61%, #703381 60%, #703381 70%, #652e74 69%, #682f78 71%, #682f78 70%, #682f78 80%, #5d2a6b 79%, #602b6f 81%, #602b6f 80%, #602b6f 90%, #552662 89%, #582866 91%, #582866 90%, #582866 100%);
+background: #a048b9 linear-gradient(140deg, #a048b9 0%, #a048b9 10%, #9845b0 10%, #9845b0 20%, #8c40a3 19%, #9041a6 21%, #9041a6 20%, #9041a6 30%, #853c99 29%, #883e9d 31%, #883e9d 30%, #883e9d 40%, #7d3990 39%, #803a94 41%, #803a94 40%, #803a94 50%, #753587 49%, #78368b 51%, #78368b 50%, #78368b 60%, #6d317e 59%, #703381 61%, #703381 60%, #703381 70%, #652e74 69%, #682f78 71%, #682f78 70%, #682f78 80%, #5d2a6b 79%, #602b6f 81%, #602b6f 80%, #602b6f 90%, #552662 89%, #582866 91%, #582866 90%, #582866 100%);	border:1px solid white;
+	font-size:1em;
+	color:white;
+	margin: 0 auto;
+	text-align: center;
+	margin: 0 13.5em;
+	border-radius: 2px
+}
+h2{
+	font-size: 2em;
+	padding-left: 5em;
+}
+
 .squares{
     height: 50%;
     width: 49%;
@@ -52,20 +100,10 @@ body{
   	left: 50%;
   	display: block;
 }
-#red{
-	background-color: red;
-}
-#blue{
-	background-color: blue;
-}
-#green{
-	background-color: green;
-}
-#yellow{
-	background-color: yellow;
-}
-
-
+#red{background-color: red;}
+#blue{background-color: blue;}
+#green{background-color: green;}
+#yellow{background-color: yellow;}
 
 .light {
 	height: 50%;
@@ -80,7 +118,7 @@ body{
 
 @keyframes highlight {
     from {border: 1px dotted gray;}
-    to {border: 10px solid black;}
+    to {border: 15px solid #FAEBD7;}
 }
 
 .light h3{
@@ -112,8 +150,4 @@ body{
     background: radial-gradient(circle, yellow, grey);
     opacity: 0.9;
     border-radius: 40px;
-}
-
-#center{
-	position:absolute;
 }

@@ -4,32 +4,35 @@
     <meta charset="UTF-8">
     <title>Martin Maza | S&iacute; Mon, Simon!</title>
         <meta name="description" content="">
-        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,300italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
         <link rel="icon" type="image/png" sizes="16x16" href="images/android-icon-192x192.png"> 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">  
   </head>
   <body>
-    <div class="container">
 
+    <div class="container">
+    <div id='center'><h1>S&iacute; Mon!</h1>
+      <h2>Round: <span id='round'>1</span></h2>
+      <button id="reset">Reset</button>
+    </div>
       <div class="squares" id="red">
         <audio class="sound" id="redSound" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
         <h3>RED</h3>
-      </div>
-      <div class="squares" id="blue">
-        <audio class="sound" id="blueSound" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
-        <h3>BLUE</h3>
       </div>
       <div class="squares" id="green">
         <audio class="sound" id="greenSound" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
         <h3>GREEN</h3>
       </div>
+      <div class="squares" id="blue">
+        <audio class="sound" id="blueSound" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
+        <h3>BLUE</h3>
+      </div>
       <div class="squares" id="yellow">
         <audio class="sound" id="yellowSound"src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>
         <h3>YELLOW</h3>
       </div>
-
-      <div id='center'><h1>S&iacute; Mon!</h1> </div>
+      
     </div>
     <script src="js/script.js" type="text/javascript"></script>
   </body>
