@@ -3,15 +3,14 @@ var round = 1;
 var winningCombos = [];
 var humanCombos = [];
 var redSound = document.getElementById('redSound');
-redSound.load();
 var blueSound = document.getElementById('blueSound');
-blueSound.load();
 var greenSound = document.getElementById('greenSound');
-greenSound.load();
 var yellowSound = document.getElementById('yellowSound');
-yellowSound.load();
+var bryan = document.getElementById('bryan');
+bryan.load();
 var reset = document.getElementById('reset');
 reset.addEventListener('click', function(){
+	bryan.play();
 	alert('Bryan McKnight-"Started Back at One"');
 	round = 1;
 	winningCombos = [];
